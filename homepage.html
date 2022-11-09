@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#blue>div>div>img{
+    width: 30%;
+}
+#blue>div{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 10px;
+    text-align: center;
+    
+
+}
+#blue>div>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#blue>img{
+    width:100%
+}
+.logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.logo>div>img{
+    width: 30%;
+}
+.logo>div>:nth-child(9){
+   width: 100px;
+}
+#flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 2px solid red;
+    height: 800px;
+    width: 100%;
+
+}
+#footer{
+    width: 100%;
+}
+#footer>div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10%;
+    width: 100%;
+
+}
+#footer>div>div>img{
+    margin-top: 20px;
+    width: 110%;
+}
+#last-foot>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+
+}
+#last-foot>div>div{
+    width: 80%;
+    text-align: center;
+    border: 2px solid green;
+}
+#last-foot>div>div>img{
+    width: 30%;
+}
+#lastdiv{
+    text-align: center;
+}
+
+
+#last-foot{
+    text-align: center;
+}
+#middle{
+width: 100%;
+}
+#middle>div{
+    width: 80%;
+    margin: auto;
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+#middle>div>div>img{
+    width: 100%;
+}
+#image>img{
+    width: 10%;
+    margin: 30px;
+}
+#two{
+    display: flex;
+    width: 100%;
+
+}
+#two>div>div{
+    display: flex;
+ 
+    width: 20%;
+    height: 40%;
+    margin-left: auto;
+}
+#two>div>h3{
+    margin-left: 60px;
+}
+#two>div>p{
+    margin-left: 60px;
+}
+#two>div>img{
+   width: 20%;
+   margin-left: 60px;
+}
+
+#two>div:nth-child(2){
+    font-size: 30px;
+    margin-left: 90px;
+    background-color: aqua;
+    width: 70%;
+    margin-right: 120px;
+    text-align: left;
+    border-radius: 10px;
+}
+#two>div:nth-child(1){
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#image2>img{
+    width: 15%;
+    margin-left: 83%;
+    position: relative;
+    bottom: 80px;
+    border-radius: 10px;
+
+}
+#video>video{
+    width: 100%;
+}
+#container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+#container>div{
+    width: 80%;
+    margin: auto;
+    border: 2px solid blue;
+}
+#container>div>img{
+    width: 100%;
+    height: 50px;
+   
+}
+#container>div:nth-child(1){
+    width: 100%;
+    
+}
+#container>div:nth-child(2){
+    width: 100%;
+    
+}
+#container>div>img:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.flex{
+    display: flex;
+    
+}
+.flex>div{
+    margin-left:20px;
+    font-size: 20px;
+}
+.flex>div:nth-child(2){
+    margin-left:60px
+}
+#container>div>button{
+    margin-left: 90px;
+}
+#container>div>a{
+    margin-left: 90px;
+}
+#tags{
+    text-align: center;
+    padding: 80px 30px;
+    font-size: 30px;
+}
+#boards{
+    width: 100%;
+
+}
+
+#boards>div{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    border: 2px solid red;
+    margin: auto;
+}
+#boards>div>div>video{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+
+
+</style>
+<body>
+    <div class="nav">
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="monday">
+
+       
+        <a href="./index.html">Product</a>
+        <a href="./cart.html">Use Cases</a>
+        <a href="./cart.html">Features</a>
+        <a href="./cart.html">Resources</a>
+        <a href="./cart.html">Price</a>
+        <a href="./cart.html">Contact sales</a>
+        <a href="./cart.html">Contact sales</a>
+        <button>Get Started</button>
+
+      </div>
+<div class="explor">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+    <a href="">Explore Now →</a>
+</div>
+<div id="blue">
+<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem accusamus</h1>
+<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem accusamus</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem accusamus</p>
+<div>
+    <div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+    <h3>Task management</h3>
+</div>
+<div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+    <h3>Task management</h3>
+</div>
+
+<div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+<h3>Task management</h3>
+</div>
+</div>
+<button>Get Started</button>
+<p>No credit card needed   ✦   Unlimited time on Free plan</p>
+
+    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/image.png" alt="">
+
+</div>
+<div id="brands">
+    <div>
+        <h2>Trusted by 152,000+ customers worldwide</h2>
+    </div>
+    <div class="logo">
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hulu.png" alt="">
+
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/bd.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/canva.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nhl.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/coca_cola.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hubspot.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/Electronic_Arts.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nautica.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/universal.png" alt="">
+    </div>
+</div>
+</div>
+
+
+<div id="boards">
+    <div>
+        <div>
+            <video src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/tabs/final-videos-tabs/7_status.mp4"></video>
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/e_colorize,co_rgb:6C6CFF/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/tabs/board_icon.svg" alt="">
+               <h1>Boards</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ducimus voluptate consequatur, eveniet fugit vel praesentium nam adipisci labore, id ullam impedit, distinctio similique deleniti ab ea non error accusantium!</p>
+
+
+        </div>
+    </div>
+</div>
+
+<div id="tags">
+    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/monday_products_small.svg" alt="">
+    <h1>End-to-end products to run <br>
+        the core of your business</h1>
+    <p>Tailored products designed for every aspect of your teams' needs.</p>
+
+</div>
+
+
+<div id="container">
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/Mobile/Work_management1.png" alt="">
+        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/Mobile/Marketer1.png" alt="">
+
+        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/Mobile/Sales_CRM1.png" alt="">
+
+        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/Mobile/Project1.png" alt="">
+
+        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/Mobile/Dev1.png" alt="">
+
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/medium_size/wm_text.png" alt="">
+         <p>forprofessional and team managing workforce</p>
+         <h3>Manage tasks and workflows to fuel team collaboration and productivity at scale.</h3>
+       <div class="flex">
+        <div>
+            <p>two use cases</p>
+            <p>project management</p>
+        </div>
+        <div>
+            <p>two use cases</p>
+            <p>project management</p>
+        </div>
+    </div>
+    <button>Get Started</button>
+    <a href="">Learn more</a>
+    </div>
+</div>
+
+<div id="video">
+    <video src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/products_video.mp4"></video>
+</div>
+
+<div id="two">
+<div>
+    <h1>See how <br>our customers <br> drive impact</h1>
+    <a href="">Read more success stories</a>
+</div>
+<div>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, aliquid reiciendis nesciunt vitae distinctio a error qui perferendis beatae ea! Corrupti maiores dolorum ratione quis deserunt pariatur corporis, non quidem.</h3>
+    <p>Charlie maghour| Founder and CEO</p>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="">
+   
+</div>
+</div>
+<div id="image2">
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/reviews/oscar_image.png" alt="">
+</div>
+
+
+
+<div id="middle">
+<div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/support_globe.png" alt="">
+
+    </div>
+    <div>
+<h1>Supporting your growth</h1>
+<h1>everry steps of the  way</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cumque, ratione adipisci incidunt, saepe perferendis provident amet qui sit ut error totam laborum ipsum repellendus atque rem officia voluptatum dignissimos!</p>
+<div id="image">
+    
+<img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/phone.png" alt="" >
+<img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/heart.png" alt="" >
+<img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/fast.png" alt="" >
+
+</div>
+<button>Get in touch</button>
+<a href="">View our support centre</a>
+
+    </div>
+</div>
+</div>
+
+<div id="lastdiv">
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/stars.png" alt="">
+    <h2>An Awaard winning platfrom loved by the audience</h2>
+    <p>Bases on 100000 Reviews</p>
+</div>
+<div id="last-foot">
+    <div>
+<div>
+<img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/trust.png" alt="">
+<h2>Voted best feature tag and select tag value</h2>
+<p>This is the best no code platform </p>
+</div>
+<div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/forrester.png" alt="">
+    <h2>Voted best feature tag and select tag value</h2>
+    <p>This is the best no code platform </p>
+</div>
+<div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/capterra.png" alt="">
+    <h2>Voted best feature tag and select tag value</h2>
+    <p>This is the best no code platform </p>
+</div>
+<div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/g2.png" alt="">
+    <h2>Voted best feature tag and select tag value</h2>
+    <p>This is the best no code platform </p>
+</div>
+
+</div>
+<h2>Deleiver your best work with monday.com</h2>
+<p>No credit card needed   ✦   Unlimited time on Free plan</p>
+<button>Get Started</button>
+</div>
+
+
+
+<div id="footer">
+    <div>
+   <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="">
+          <p>Pricing</p>
+          <p>Contact us</p>
+          <p>Template</p>
+          <p>Smb</p>
+          <p>Enterprises</p>
+          <p>Non profit</p>
+          <p>Market place</p>
+          <p>24/7 Support</p>
+    </div>
+   <div>
+          <h2>Features</h2>
+          <p>Contact us</p>
+          <p>Template</p>
+          <p>Smb</p>
+          <p>Enterprises</p>
+          <p>Non profit</p>
+          <p>Market place</p>
+          <p>24/7 Support</p>
+ </div>
+   <div>
+    <h2>Monday</h2>
+    <p>Pricing</p>
+    <p>Contact us</p>
+    <p>Template</p>
+    <p>Smb</p>
+    <p>Enterprises</p>
+    <p>Non profit</p>
+   
+    <p>Market place</p>
+    <p>24/7 Support</p>
+ </div>
+  <div>
+    <h2>UseCases</h2>
+    <p>Pricing</p>
+    <p>Contact us</p>
+    <p>Template</p>
+    <p>Smb</p>
+    <p>Enterprises</p>
+    <p>Non profit</p>
+    <p>Market place</p>
+    <p>24/7 Support</p>
+    <p>Enterprises</p>
+    <p>Contact us</p>
+    <p>Market place</p>
+ </div>
+   <div>
+    <h2>Company</h2>
+    <p>Pricing</p>
+    <p>Contact us</p>
+    <p>Template</p>
+    <p>Smb</p>
+    <p>Enterprises</p>
+    <p>Non profit</p>
+    <p>Market place</p>
+    <p>24/7 Support</p>
+    <p>Sustainibility</p>
+    <p>Affilates</p>
+    <p>Digital Lift</p>
+ </div>
+  <div>
+    <h2>Resources</h2>
+    <p>Pricing</p>
+    <p>Contact us</p>
+    <p>Template</p>
+    <p>Smb</p>
+    <p>Enterprises</p>
+    <p>Non profit</p>
+    <p>Market place</p>
+    <p>24/7 Support</p>
+ </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
+<script>
+
+
+
+</script>
