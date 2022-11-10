@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#div{
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    background-color: rgba(212, 209, 209, 0.966);
+}
+#div>img{
+width: 200px;
+}
+#login{
+    width: 50%;
+   margin-left: 30%;
+   margin-top: 5%;
+   font-size:25px;
+   
+}
+#login>form>input{
+    width: 350px;
+    height: 40px;
+}
+#login>button{
+    margin-top: 30px;
+    width: 350px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+#centre{
+    margin-left: 40px;
+   
+}
+#font{
+    margin-top: 80px;
+}
+#login>button:hover{
+    cursor: pointer;
+    background-color: rgb(1, 1, 20);
+}
+
+
+
+
+</style>
+<body>
+    <div id="div">
+        <img src="https://cdn.monday.com/images/logos/monday_logo_short.png" alt="">
+    </div>
+    <div id="login">
+        <form>
+           <h2>Login to your account</h2>
+           <p id="font">Enter your work Email address</p>
+            <input type="email" id="name" placeholder="Email" /><br>
+            
+          </form>
+          <button>Login</button>
+          <p id="centre">or signin with</p>
+          <button>
+            <img src="https://cdn.monday.com/images/logo_google_v2.svg" alt="">Google
+          </button>
+          <p>Dont have any accounts<a href="">Signup</a></p>
+    </div>
+</body>
+</html>

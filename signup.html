@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #signup{
+        width: 70%;
+        margin-left: 400px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+#signup>form>input{
+    width: 300px;
+    height: 30px;
+}
+#signup>button{
+    height: 35px;
+    width: 310px;
+    margin-top: 20px;
+
+}
+#front{
+    margin-left: 15%;
+}
+
+
+
+</style>
+<body>
+   
+    <div id="signup">
+        <form>
+           <h2>Welcome to monday.com</h2>
+           <p>Get started - it's free. No credit card needed.</p>
+           <p>Enter Email</p>
+            <input type="email" id="name" placeholder="Email" /><br>
+          </form>
+          <button id="button">Continue</button>
+          <p id="front">Or</p>
+          <button>
+            <img src="https://cdn.monday.com/images/logo_google_v2.svg" alt="">Continue with Google
+          </button>
+    </div>
+</body>
+</html>
+<script>
+
+
+let bag = [];
+    let cart = JSON.parse(localStorage.getItem("cart"))||[];
+
+
+
+    let button = document.querySelector("#button").addEventListener("click",function(){
+       cart.push()
+    })
+</script>
