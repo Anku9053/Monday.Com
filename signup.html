@@ -33,13 +33,15 @@
 <body>
    
     <div id="signup">
-        <form>
+        <a href="login.html">Login</a>
+        
            <h2>Welcome to monday.com</h2>
            <p>Get started - it's free. No credit card needed.</p>
            <p>Enter Email</p>
-            <input type="email" id="name" placeholder="Email" /><br>
-          </form>
-          <button id="button">Continue</button>
+            <input type="email" id="email" placeholder="Email" /><br>
+            <button id="button" onclick="signup()">Continue</button>
+        
+         
           <p id="front">Or</p>
           <button>
             <img src="https://cdn.monday.com/images/logo_google_v2.svg" alt="">Continue with Google
@@ -49,13 +51,13 @@
 </html>
 <script>
 
+function signup(){
+   
+        let email = document.getElementById("email").value
+    localStorage.setItem("Email1",email)
+   alert("signup is sucessfull")
+}
 
-let bag = [];
-    let cart = JSON.parse(localStorage.getItem("cart"))||[];
 
 
-
-    let button = document.querySelector("#button").addEventListener("click",function(){
-       cart.push()
-    })
 </script>

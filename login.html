@@ -55,18 +55,41 @@ width: 200px;
         <img src="https://cdn.monday.com/images/logos/monday_logo_short.png" alt="">
     </div>
     <div id="login">
-        <form>
+       
            <h2>Login to your account</h2>
            <p id="font">Enter your work Email address</p>
-            <input type="email" id="name" placeholder="Email" /><br>
+            <input type="email" id="email" placeholder="Email" /><br>
             
-          </form>
-          <button>Login</button>
+         
+         <button id="button" onclick="login()">Login</button>
           <p id="centre">or signin with</p>
           <button>
             <img src="https://cdn.monday.com/images/logo_google_v2.svg" alt="">Google
           </button>
-          <p>Dont have any accounts<a href="">Signup</a></p>
+          <p>Dont have any accounts<a href="signup.html">Signup</a></p>
     </div>
 </body>
 </html>
+<script>
+
+
+
+function login(){
+    let email = document.querySelector("#email").value;
+    let email1 = localStorage.getItem("Email1");
+
+
+if(email==email1){
+    window.location.href = "homepage.html"
+}else{
+    alert("email and pass is incorrect");
+}
+
+}
+
+
+
+
+
+
+</script>
