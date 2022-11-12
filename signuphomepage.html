@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#blue>div>div>img{
+    width: 30%;
+}
+#blue>div{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 10px;
+    text-align: center;
+    
+
+}
+#blue>div>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#blue>img{
+    width:100%
+}
+.logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.logo>div>img{
+    width: 30%;
+}
+.logo>div>:nth-child(9){
+   width: 100px;
+}
+#flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 2px solid red;
+    height: 800px;
+    width: 100%;
+
+}
+#footer{
+    width: 100%;
+}
+#footer>div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10%;
+    width: 100%;
+
+}
+#footer>div>div>img{
+    margin-top: 20px;
+    width: 110%;
+}
+#last{
+    width: 100%;
+    
+}
+#last-foot>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: auto;
+    width: 80%;
+
+
+}
+#last-foot{
+    background-color: lightblue;
+    height: 600px;
+}
+#last-foot>div>div{
+    width: 80%;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-top: 40px;
+
+}
+#last-foot>div>div:hover{
+    width: 80%;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 10px;
+background-color: aqua;
+}
+#last-foot>div>div>img{
+    width: 40%;
+}
+
+#lastdiv{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    background-color:lightblue;
+  padding-top: 20px;
+}
+
+
+#last-foot{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+#last-foot>h2{
+    margin-top: 100px;
+}
+
+#last-foot>button{
+    width: 200px;
+    height:40px;
+    border-radius: 20px;
+    background-color: blue;
+
+}
+#last-foot>button:hover{
+    width: 200px;
+    height:40px;
+    border-radius: 20px;
+    background-color: aqua;
+    
+}
+
+
+
+
+#middle{
+width: 100%;
+}
+#middle>div{
+    width: 80%;
+    margin: auto;
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+#middle>div>div>img{
+    width: 100%;
+}
+#middle>div>div>button{
+width: 150px;
+height: 30px;
+border-radius: 20px;
+background-color: blue;
+
+}
+#middle>div>div>button:hover{
+cursor: pointer;
+background-color: aqua;
+border: 0px;   
+}
+#middle>div>div>a{
+width: 150px;
+height: 60px;
+border-radius: 20px;
+color: black;
+margin-left: 20px;
+}
+#image>img{
+    width: 10%;
+    margin: 80px;
+}
+#two{
+    display: flex;
+    width: 100%;
+margin-top: 30px;
+}
+#two>div>div{
+    display: flex;
+ 
+    width: 20%;
+    height: 40%;
+    margin-left: auto;
+}
+#two>div>h3{
+    margin-left: 60px;
+}
+#two>div>p{
+    margin-left: 60px;
+}
+#two>div>img{
+   width: 20%;
+   margin-left: 60px;
+}
+
+#two>div:nth-child(2){
+    font-size: 20px;
+    margin-left: 250px;
+    background-color: aqua;
+    width: 300%;
+    margin-right: 120px;
+    height: 300px;
+    text-align: left;
+    border-radius: 10px;
+  
+    position: relative;
+    
+}
+#two>div:nth-child(1){
+    margin-top: 40px;
+    font-size: 20px;
+    width: 100%;
+ 
+  margin-left: 80px;
+}
+#image2>img{
+    width: 15%;
+    margin-left: 83%;
+    position: relative;
+    bottom: 80px;
+    border-radius: 10px;
+
+}
+#video>video{
+    width: 100%;
+}
+#container{
+    width: 100%;
+    
+    background-color: white;
+}
+#container>div{
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    display: grid;
+    background-color: rgb(6, 235, 204);
+    gap: 30px;
+    grid-template-columns: repeat(5,1fr);
+    box-shadow: rgba(0, 213, 241, 0.35) 0px 5px 15px;
+
+}
+#container>div>div>img{
+    width: 100%;
+    height: 50px;
+   
+}
+#container>div>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    width: 100%;
+}
+#container>div>div>p{
+    margin-left:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#container>div>div>button{
+    margin-left:10px;
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: blue;
+    margin-bottom: 10px;
+}
+#container>div>div>button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+#container>div>div>img{
+    margin-left:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+#container>div>div>a{
+    margin-left:70px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#container>div:nth-child(1){
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#container>div:nth-child(2){
+    width: 100%;
+    
+}
+#container>div>img:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.flex{
+    display: flex;
+    
+}
+.flex>div{
+    margin-left:20px;
+    font-size: 20px;
+}
+.flex>div:nth-child(2){
+    margin-left:60px
+}
+#container>div>button{
+    margin-left: 90px;
+}
+#container>div>a{
+    margin-left: 90px;
+}
+#tags{
+    text-align: center;
+    padding: 80px 30px;
+    font-size: 30px;
+}
+
+
+
+#boards{
+width: 100%;
+
+margin-top: 10%;
+
+}
+
+#boards>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    justify-content: space-between;
+  gap: 100px;
+    
+    margin: auto;
+}
+#boards>div>div>video{
+    width: 90%;
+    box-shadow: rgba(2, 217, 255, 0.35) 20px 35px 90px;
+    margin-left: 50px;
+
+}
+#boards>div:nth-child(1){
+    width: 100%;
+    gap: 20px;
+}
+#boards>div>div:nth-child(2){
+    margin-left: 30px;
+    width: 60%;
+ 
+    
+}
+#boards>div>div>img{
+    margin-top: 150px;
+}
+#boards>div>div>h1{
+
+position: relative;
+   bottom: 70px;
+   margin-left:70px ;
+}
+#boards>div>div>p{
+position: relative;
+bottom: 80px;
+font-size: 20px;
+}
+
+
+
+
+
+.nav{
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+}
+.nav>div>img:nth-child(1){
+width: 100%;
+}
+.nav>div:nth-child(2){
+width: 180%;
+
+}
+
+.nav>div>a{
+    
+ margin-left:60px;
+ 
+    width: 100%;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+   padding: 20px 10px;
+    margin-top: 80px;
+}
+.nav>div>button{
+    width: 140px;
+    position: relative;
+    top: 5px;
+    left: 50px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+.nav>div>button:hover{
+    cursor: pointer;
+}
+.explor{
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+  
+    background-color: aqua;
+    height: 60px;
+    
+}
+.explor>h3{
+    font-size: 30px;
+}
+.explor>a{
+    position: relative;
+    bottom: 55px;
+   margin-left: 850px;
+   font-size: 20px;
+}
+#blue{
+    background-color: #030236;
+    color: white;
+    position: relative;
+   
+    bottom: 50px;
+    text-align: center;
+}
+#blue>div>div:nth-child(1):hover{
+    cursor: pointer;
+    border-color: olive;
+    background-color: rgb(94, 94, 94);
+}
+#blue>div>div:nth-child(2):hover{
+    cursor: pointer;
+    border-color: red;
+    background-color: rgb(94, 94, 94);
+}
+#blue>div>div:nth-child(3):hover{
+    cursor: pointer;
+    border-color: violet;
+    background-color: rgb(94, 94, 94);
+}
+#blue>div>div:nth-child(4):hover{
+    cursor: pointer;
+    border-color: rebeccapurple;
+    background-color: rgb(94, 94, 94);
+}
+#blue>div>div:nth-child(5):hover{
+    cursor: pointer;
+    border-color: brown;
+    background-color: rgb(94, 94, 94);
+}
+#blue>div>div:nth-child(6):hover{
+    cursor: pointer;
+    border-color: yellow;
+    background-color: rgb(94, 94, 94);
+}
+#blue>div>div:nth-child(7):hover{
+    cursor: pointer;
+    border-color: white;
+    background-color: rgb(94, 94, 94);
+}
+#blue>div>div:nth-child(8):hover{
+    cursor: pointer;
+    border-color: chocolate;
+    background-color: rgb(94, 94, 94);
+}
+#blue>div>div:nth-child(9):hover{
+    cursor: pointer;
+    border-color: orange;
+    background-color: rgb(94, 94, 94);
+}
+
+
+
+
+
+
+
+#blue>div>div{
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#blue>div{
+margin: auto;
+    width: 90%;
+    margin-top: 50px;
+   
+}
+#blue>h1{
+    margin-top: 80px;
+    font-size: 40px;
+}
+#blue>p{
+    margin-top: 40px;
+    font-size: 30px;
+}
+#blue>div>div>img{
+    margin-top: 10px;
+}
+#blue>button{
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: blue;
+    color: azure;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+}
+#blue>button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+#blue>div>div>input{
+   position: relative;
+   right: 30px;
+   bottom: 30px;
+
+}
+#brands{
+    text-align: center;
+}
+.logo{
+    margin-top: 60px;
+}
+.logo-2{
+    width: 150%;
+   position: relative;
+   right: 60px;
+}
+
+
+
+
+
+</style>
+<body>
+    <div class="nav">
+        <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="monday">
+    </div>
+       <div>
+        <a href="./index.html">Product</a>
+        <a href="./cart.html">Use Cases</a>
+        <a href="./cart.html">Features</a>
+        <a href="./cart.html">Price</a>
+        <a href="./cart.html">Contact sales</a>
+        <button>Create new account</button>
+        <button>Go to my account</button>
+        
+    </div>
+      </div>
+<div class="explor">
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing </h3><a href="">Explore Now →</a>
+   
+    
+</div>
+<div id="blue">
+
+<h1>Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Voluptatem accusamus</h1>
+<p>What would you liketo manage</p>
+<div>
+    <div>
+        <input type="checkbox">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAqJ1kAk_ToSrSw2YM5-H0QL6_XkyWnIdJ0Uiy1hvTIUysFTjx" alt="">
+    <h3>Task management</h3>
+</div>
+<div>
+    <input type="checkbox">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNOP1ZSMwIQbamPW_VvDtyiH13Uw27D_9bXMkWVKKs_Fcss_C" alt="">
+    <h3>Task management</h3>
+</div>
+
+<div>
+    <input type="checkbox">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQqrr24FnJfagSKxYlhPDmLZuPtCJAcdTLanJMK4-DIInjt4e8" alt="">
+<h3>Project management</h3>
+</div>
+<div>
+    <input type="checkbox">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMPIgFlASv4oHX1jDjEEfisVunroNpp1mpYY-Em7vnbF_9b7XQ" alt="">
+<h3>Sales management</h3>
+</div>
+<div>
+    <input type="checkbox">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-GdvF_ddoHqWE2jNqYnpBe7w_3xvobtiNar8nYLIwM9MsLyn4" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <input type="checkbox">
+    <img src="https://w7.pngwing.com/pngs/543/1015/png-transparent-computer-icons-source-code-icon-design-blog-others-angle-text-trademark-thumbnail.png" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <input type="checkbox">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoGjhtb2HxZi8r_t8xsuVzbM95zSFh9fZCZ50vbbKUtn_xs90w" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <input type="checkbox">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8gt_8ZL3kLPjnXI6dhKNbWi-ZH6riDjmCg6aT94S02b6AA5st" alt="">
+<h3>Task management</h3>
+</div>
+<div>
+    <input type="checkbox">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS881TtrSYhTUKIjHSycw14V-vbVMSz4AW7RxPnkW8laG5kpv7J" alt="">
+<h3>Task management</h3>
+</div>
+</div>
+<button>Go to my Account</button>
+<p>No credit card needed   ✦   Unlimited time on Free plan</p>
+
+    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/image.png" alt="">
+
+</div>
+<div id="brands">
+    <div>
+        <h2>Trusted by 152,000+ customers worldwide</h2>
+    </div>
+    <div class="logo">
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hulu.png" alt="">
+
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/bd.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/canva.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nhl.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/coca_cola.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hubspot.png" alt="">
+    </div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/Electronic_Arts.png" alt="">
+    </div>
+    <div >
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nautica.png" alt="">
+    </div>
+    <div class="logo-2">
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/universal.png" alt="">
+    </div>
+</div>
+</div>
+
+<!-- <div id="screenshot">
+<img src="C:\Users\ankes\OneDrive\Pictures" alt="">
+</div> -->
+
+<div id="boards">
+    <div>
+        <div>
+            <video src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/tabs/final-videos-tabs/7_status.mp4"></video>
+        </div>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/e_colorize,co_rgb:6C6CFF/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/tabs/board_icon.svg" alt="">
+               <h1>Boards</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ducimus voluptate consequatur, eveniet fugit vel praesentium nam adipisci labore, id ullam impedit, distinctio similique deleniti ab ea non error accusantium!</p>
+
+
+        </div>
+    </div>
+</div>
+
+<div id="tags">
+    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/monday_products_small.svg" alt="">
+    <h1>End-to-end products to run <br>
+        the core of your business</h1>
+    <p>Tailored products designed for every aspect of your teams' needs.</p>
+
+</div>
+
+
+<div id="container">
+    <div>
+   <div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png" alt="">
+<p>For professionals and teams managing tasks & workflows</p>
+<p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+<p>Top use cases:</p>
+<p>✅ Task management</p>
+<p>✅ project management</p>
+<p>✅ Automated wokflow</p>
+<p>✅ Build your own</p>
+<button>Get Started</button><br>
+<a href="">Learn more</a>
+</div>
+   <div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/marketer_main_logo.png" alt="">
+<p>For professionals and teams managing tasks & workflows</p>
+<p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+<p>Top use cases:</p>
+<p>✅ Task management</p>
+<p>✅ project management</p>
+<p>✅ Automated wokflow</p>
+<p>✅ Build your own</p>
+<button>Get Started</button><br>
+<a href="">Learn more</a>
+   </div>
+   <div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png" alt="">
+<p>For professionals and teams managing tasks & workflows</p>
+<p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+<p>Top use cases:</p>
+<p>✅ Task management</p>
+<p>✅ project management</p>
+<p>✅ Automated wokflow</p>
+<p>✅ Build your own</p>
+<button>Get Started</button><br>
+<a href="">Learn more</a>
+
+   </div>
+   <div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/marketer_main_logo.png" alt="">
+<p>For professionals and teams managing tasks & workflows</p>
+<p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+<p>Top use cases:</p>
+<p>✅ Task management</p>
+<p>✅ project management</p>
+<p>✅ Automated wokflow</p>
+<p>✅ Build your own</p>
+<button>Get Started</button><br>
+<a href="">Learn more</a>
+   </div>
+   <div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png" alt="">
+<p>For professionals and teams managing tasks & workflows</p>
+<p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+<p>Top use cases:</p>
+<p>✅ Task management</p>
+<p>✅ project management</p>
+<p>✅ Automated wokflow</p>
+<p>✅ Build your own</p>
+<button>Get Started</button><br>
+<a href="">Learn more</a>
+   </div>
+</div>
+</div>
+
+<div id="video">
+    <video src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/products_video.mp4"></video>
+</div>
+
+<div id="two">
+<div>
+    <h1>See how <br>our customers <br> drive impact</h1>
+    <a href="">Read more success stories</a>
+</div>
+<div>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, aliquid reiciendis nesciunt vitae distinctio a error qui perferendis beatae ea! Corrupti maiores dolorum ratione quis deserunt pariatur corporis, non quidem.</h3>
+    <p>Charlie maghour| Founder and CEO</p>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="">
+   
+</div>
+</div>
+<div id="image2">
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/reviews/oscar_image.png" alt="">
+</div>
+
+
+
+<div id="middle">
+<div>
+    <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/support_globe.png" alt="">
+
+    </div>
+    <div>
+<h1>Supporting your growth</h1>
+<h1>everry steps of the  way</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cumque, ratione adipisci incidunt, saepe perferendis provident amet qui sit ut error totam laborum ipsum repellendus atque rem officia voluptatum dignissimos!</p>
+<button>Get in touch</button>
+<a href="">View our support centre</a>
+
+    </div>
+</div>
+</div>
+
+<div id="lastdiv">
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/stars.png" alt="">
+    <h2>An Awaard winning platfrom loved by the audience</h2>
+    <p>Bases on 100000 Reviews</p>
+</div>
+<div id="last-foot">
+    <div>
+<div>
+<img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/trust.png" alt="">
+<h2>Voted best feature tag and select tag value</h2>
+<p>This is the best no code platform </p>
+</div>
+<div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/forrester.png" alt="">
+    <h2>Voted best feature tag and select tag value</h2>
+    <p>This is the best no code platform </p>
+</div>
+<div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/capterra.png" alt="">
+    <h2>Voted best feature tag and select tag value</h2>
+    <p>This is the best no code platform </p>
+</div>
+<div>
+    <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/g2.png" alt="">
+    <h2>Voted best feature tag and select tag value</h2>
+    <p>This is the best no code platform </p>
+</div>
+
+</div>
+<h2>Deleiver your best work with monday.com</h2>
+<p>No credit card needed   ✦   Unlimited time on Free plan</p>
+<button>Get Started</button>
+</div>
+
+
+
+<div id="footer">
+    <div>
+   <div>
+        <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="">
+          <p>Pricing</p>
+          <p>Contact us</p>
+          <p>Template</p>
+          <p>Smb</p>
+          <p>Enterprises</p>
+          <p>Non profit</p>
+          <p>Market place</p>
+          <p>24/7 Support</p>
+    </div>
+   <div>
+          <h2>Features</h2>
+          <p>Contact us</p>
+          <p>Template</p>
+          <p>Smb</p>
+          <p>Enterprises</p>
+          <p>Non profit</p>
+          <p>Market place</p>
+          <p>24/7 Support</p>
+ </div>
+   <div>
+    <h2>Monday</h2>
+    <p>Pricing</p>
+    <p>Contact us</p>
+    <p>Template</p>
+    <p>Smb</p>
+    <p>Enterprises</p>
+    <p>Non profit</p>
+   
+    <p>Market place</p>
+    <p>24/7 Support</p>
+ </div>
+  <div>
+    <h2>UseCases</h2>
+    <p>Pricing</p>
+    <p>Contact us</p>
+    <p>Template</p>
+    <p>Smb</p>
+    <p>Enterprises</p>
+    <p>Non profit</p>
+    <p>Market place</p>
+    <p>24/7 Support</p>
+    <p>Enterprises</p>
+    <p>Contact us</p>
+    <p>Market place</p>
+ </div>
+   <div>
+    <h2>Company</h2>
+    <p>Pricing</p>
+    <p>Contact us</p>
+    <p>Template</p>
+    <p>Smb</p>
+    <p>Enterprises</p>
+    <p>Non profit</p>
+    <p>Market place</p>
+    <p>24/7 Support</p>
+    <p>Sustainibility</p>
+    <p>Affilates</p>
+    <p>Digital Lift</p>
+ </div>
+  <div>
+    <h2>Resources</h2>
+    <p>Pricing</p>
+    <p>Contact us</p>
+    <p>Template</p>
+    <p>Smb</p>
+    <p>Enterprises</p>
+    <p>Non profit</p>
+    <p>Market place</p>
+    <p>24/7 Support</p>
+ </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
+<script>
+
+
+
+</script>
