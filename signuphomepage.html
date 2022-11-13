@@ -544,13 +544,13 @@ margin: auto;
         <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt="monday">
     </div>
        <div>
-        <a href="./index.html">Product</a>
-        <a href="./cart.html">Use Cases</a>
-        <a href="./cart.html">Features</a>
-        <a href="./cart.html">Price</a>
-        <a href="./cart.html">Contact sales</a>
-        <button>Create new account</button>
-        <button>Go to my account</button>
+        <a href=>Product</a>
+        <a href=>Use Cases</a>
+        <a href=>Features</a>
+        <a href="./pricing.html">Price</a>
+        <a href=>Contact sales</a>
+        <button id="create">Create new account</button>
+        <button>Welcome Back</button>
         
     </div>
       </div>
@@ -909,7 +909,9 @@ margin: auto;
 </body>
 </html>
 <script>
-
+document.querySelector("#create").addEventListener("click",function(){
+window.location.href = "signup.html"
+})
 
 
 </script>
