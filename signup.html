@@ -26,6 +26,11 @@
 #front{
     margin-left: 15%;
 }
+#email{
+    width: 310px;
+    height: 30px;
+    
+}
 
 
 
@@ -56,6 +61,7 @@ function signup(){
         let email = document.getElementById("email").value
     localStorage.setItem("Email1",email)
    alert("signup is sucessfull")
+   window.location.href="login.html"
 }
 
 
